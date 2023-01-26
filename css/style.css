@@ -1,0 +1,138 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+body {
+  font-size: 18px;
+  background-color: hsl(217deg, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 350px;
+  background-color: hsl(216deg, 50%, 16%);
+  padding: 30px;
+  border-radius: 15px;
+}
+.card .card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .card-header .hover-eye {
+  display: none;
+}
+.card .card-header .img-square {
+  border-radius: 15px;
+  width: 300px;
+}
+.card .card-body .main-text {
+  color: hsl(0deg, 0%, 100%);
+  margin: 20px 0;
+  font-size: 2.5rem;
+  display: block;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+.card .card-body .main-text:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+.card .card-body .about-the-product {
+  color: hsl(215deg, 51%, 70%);
+  line-height: 30px;
+}
+.card .card-body .stats {
+  margin: 30px 0;
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+}
+.card .card-body .stats .left {
+  display: flex;
+}
+.card .card-body .stats .left .eth-value {
+  color: hsl(178deg, 100%, 50%);
+}
+.card .card-body .stats .left .eth-icon {
+  margin-right: 10px;
+}
+.card .card-body .stats .right {
+  display: flex;
+}
+.card .card-body .stats .right .days {
+  margin-left: 5px;
+  color: hsl(215deg, 51%, 70%);
+}
+.card .card-body .line {
+  margin: 20px 0;
+  border-bottom: 1px solid hsl(215deg, 51%, 70%);
+}
+.card .card-body .author {
+  display: flex;
+  align-items: center;
+}
+.card .card-body .author .img-author {
+  margin-right: 20px;
+  width: 40px;
+  margin: 10px;
+  border: 2px solid hsl(0deg, 0%, 100%);
+  border-radius: 500px;
+}
+.card .card-body .author .whos-creation {
+  color: hsl(215deg, 51%, 70%);
+}
+.card .card-body .author .whos-creation .author-link {
+  color: hsl(0deg, 0%, 100%);
+  transition: color 0.3s;
+}
+.card .card-body .author .whos-creation .author-link:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+
+.card:hover .hover-eye {
+  position: absolute;
+  display: block;
+  z-index: 5;
+  background-color: rgba(0, 0, 255, 0.3);
+}/*# sourceMappingURL=style.css.map */
